@@ -13,13 +13,22 @@ def ask_name():
     else:
         print ("Invalid name!")
         ask_name()
+        
+def rules():
+    print ("")
+    print ("---RULES---")
+    print ("You are a student at Tokyo High School for Gifted Swords. It's filled with pretty ladies")
+    print ("who are also swords. Do nice things for them, or other things that they would agree with,")
+    print ("to garner their affection. Should you amass enough emotional wealth, you can become")
+    print ("BEST FRIENDS.")
 
 def name_check():
     global player_name
-    check = raw_input("Your name is %s. Are you sure? Y/N: ")
+    print("Your name is %s.") % (player_name) 
+    check = raw_input("Are you sure? Y/N: ")
     check = check.upper()
-    if check == "N":
-        #continue
+    if check == "Y":
+        rules()
     else:
         ask_name()
         
