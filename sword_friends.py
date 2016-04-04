@@ -32,6 +32,36 @@ def name_check():
     else:
         ask_name()
         
+def event_one():
+    cont = raw_input("....\n'RRRRR RRRRR RRRR' goes your alarm clock.")
+    if cont =="":
+        cont = raw_input("....:\nYou jolt awake and look at the time. Oh no!")
+        if cont =="":
+            cont = raw_input("....:\nYou're ten minutes late for school already!")
+            if cont == "":
+                cont = raw_input("....:\nYou rush out of your spartan one-room apartment.")
+                if cont == "":
+                    cont = raw_input("YOU:\n'I'm gonna be late!'")
+                    if cont == "":
+                        print ("--------------------------------------")
+                    else:
+                        pass
+                else:
+                    pass
+            else:
+                pass
+        else:
+            pass
+    else:
+        pass
+        
+def event_two():
+    cont = raw_input("....\nYou rush out of the train doors as they slide open.")
+    if cont == "":
+        cont = raw_input("....\nUnaware of your surroundings, you crash into someone and feel a\nsharp pain in your arm.")
+    else:
+        pass
         
 print ("Welcome to Swordfriends!")
 ask_name()
+event_one()
